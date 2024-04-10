@@ -1,0 +1,104 @@
+@startuml
+class Triangulo {
+    - ladoA: Float
+    - ladoB: Float
+    - ladoC: Float
+
+    + calcularPerimetro(): Float
+    + calcularArea(): Float
+    + ehValido(): Boolean
+    + tipoTriangulo(): String
+}
+
+class Trapezio {
+    - baseMaior: Float
+    - baseMenor: Float
+    - altura: Float
+    - ladoA: Float
+    - ladoB: Float
+
+    + calcularPerimetro(): Float
+    + calcularArea(): Float
+    + ehValido(): Boolean
+    + tipoTrapezio(): String
+}
+
+class Cubo {
+    - aresta: Float
+
+    + calcularVolume(): Float
+    + calcularAreaSuperficial(): Float
+    + calcularDiagonal(): Float
+}
+
+class Paralelepipedo {
+    - comprimento: Float
+    - largura: Float
+    - altura: Float
+
+    + calcularVolume(): Float
+    + calcularAreaSuperficial(): Float
+    + calcularDiagonalMaior(): Float
+}
+
+class Circulo {
+    - raio: Float
+
+    + calcularArea(): Float
+    + calcularPerimetro(): Float
+    + calcularDiametro(): Float
+}
+
+class Cilindro {
+    - raio: Float
+    - altura: Float
+
+    + calcularVolume(): Float
+    + calcularAreaLateral(): Float
+    + calcularAreaTotal(): Float
+}
+
+class Postagem {
+    - autor: String
+    - data: String
+    - conteudo: String
+    - curtidas: Integer
+    - comentarios: String[]
+
+    + curtir(): void
+    + comentar(): void
+    + removerCurtida(): void
+    + removerComentario(): void
+    + editarConteudo(): void
+}
+
+class Ponto {
+    - x: Float
+    - y: Float
+
+    + mover(): void
+    + distancia(): Float
+}
+
+class Calculadora {
+    - num1: Float
+    - num2: Float
+
+    + somar(): Float
+    + subtrair(): Float
+    + multiplicar(): Float
+    + dividir(): Float
+
+}
+
+class Pixel {
+    - linha: Integer
+    - coluna: Integer
+    - cor: String
+
+    + getCorRGB(): String
+    + setCorRGB(String corRGB): void
+    + getCorHexadecimal(): String
+    + setCorHexadecimal(String corHexadecimal): void
+}
+@enduml

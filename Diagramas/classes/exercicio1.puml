@@ -1,0 +1,137 @@
+@startuml
+!theme carbon-gray
+
+class Aluno {
+    - nome: String
+    - idade: int
+    - nota: float
+
+    + exibirInformacoes():void
+    + foiAprovado():boolean
+}
+
+class Livro {
+    - titulo: String
+    - autor: String
+    - anoPublicacao: int
+
+    + exibirInformacoes():void
+    + getNomeAutor():String
+}
+
+class ContaBancaria {
+    - numeroConta: int
+    - saldo: float
+
+    + depositar():void
+    + sacar():void
+}
+
+class Retangulo {
+    - largura: float
+    - altura: float
+
+    + calcularArea():float
+    + calcularPerimetro():float
+}
+
+
+class EquacaoSegundoGrau {
+    - a: float
+    - b: float
+    - c: float
+
+    + atribuiA():void
+    + atribuiB():void
+    + atribuiC():void
+    + encontraRaizes():void
+}
+
+class Carro {
+    -marca: String
+    -modelo: String
+    -ano: Integer
+    -cor: String
+    -placa: String
+
+    + calcularIPVA():float
+    + dirigir():void
+    + agendarRevisao():void
+}
+
+class Produto {
+    - nome: String
+    - descricao: String
+    - categoria: String
+    - marca: String
+    - preco: float
+    - estoque: int
+
+    + atualizarPreco(): void
+    + excluirProduto(): void
+    + adicionarEstoque(): void
+    + verificarDisponibilidade(): boolean
+}
+
+class Celular {
+    - marca: String
+    - modelo: String
+    - ano: Integer
+    - armazenamento: Integer
+    - memoria: Integer
+    - processador: String
+    - sistemaOperacional: String
+    - tamanhoTela: Float
+    - resolucaoTela: String
+    - cameraPrincipal: String
+    - cameraFrontal: String
+    - bateria: Integer
+    - sensores: String
+    - preco: Float
+
+    + ligar()
+    + desligar()
+    + carregar()
+    + atualizarSistema()
+    + tirarFoto()
+}
+
+
+class TimeFutebol {
+    - nome: String
+    - cidade: String
+    - estado: String
+    - anoFundacao: Integer
+    - estadio: String
+    - titulos: String[]
+    - elenco: String[]
+    - comissaoTecnica: String[]
+    - uniforme: String
+    - hino: String
+
+    + comprarJogador(): void
+    + venderJogador(): void
+    + removerMembroComissaoTecnica(): void
+    + verificarPosicaoTabela(): Integer
+    + jogarPartida(): void
+}
+
+class BeneficiarioBolsaFamilia {
+    - nomeCompleto: String
+    - nis: String
+    - dataNascimento: Date
+    - endereco: String
+    - composicaoFamiliar: String[]
+    - rendaFamiliar: Float
+    - situaçãoCadastral: String
+    - dataInscricao: Date
+    - valorBeneficio: Float
+    - formaPagamento: String
+
+    + atualizarDados(): void
+    + extratoPagamento(): String
+    + consultarSaldo(): Float
+    + declararComposicaoFamiliar(): void
+    + acessarInformacoesPrograma()
+}
+@enduml
